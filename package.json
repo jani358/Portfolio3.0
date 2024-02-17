@@ -1,7 +1,7 @@
 {
   "name": "portfolionextlvl",
   "version": "0.1.0",
-  "homepage": "https://jani358.github.io/portfoli3.0",
+  "homepage": "https://jani358.github.io/portfolio3.0",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
