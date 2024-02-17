@@ -9,7 +9,7 @@ export const Bio = {
     "I'm a driven and adaptable individual with a passion for learning and a knack for overcoming challenges. I'm dedicated to achieving excellence in all my endeavors and approach each task with a positive attitude and a determination to grow. I thrive in dynamic environments that foster innovation and creativity, always eager to push boundaries and surpass expectations.",
   github: "https://github.com/jani358",
   resume:
-    "https://drive.google.com/file/d/1r2ub_sO0d1he9GJxnXNk5LDLbRbfZhm5/view?usp=sharing",
+    "#",
   linkedin: "https://www.linkedin.com/in/janindu-gayanga-02ba60217/",
   twitter: "#",
   insta: "#",
