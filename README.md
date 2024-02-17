@@ -20,5 +20,5 @@ My Portfolio is a React.js application designed to showcase my work, skills, and
 * JavaScript: Programming language for adding interactivity to web applications.
 * Styled-Components: CSS framework for responsive and mobile-first designs.
 * Git: Version control system for tracking changes and collaborating on projects.
-* GitHub Pages: Platform for hosting and deploying web applications.
+* GitHub Pages/Netlify: Platform for hosting and deploying web applications.
 
