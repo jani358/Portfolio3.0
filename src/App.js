@@ -27,6 +27,7 @@ const Wrapper = styled.div`
 `
 function App() {
   const [darkMode] = useState(true);
+  //project is initially set to null, indicating that no specific project is selected when the modal is closed.
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   console.log(openModal)
   return (
