@@ -84,10 +84,13 @@ const index = () => {
                 </Desc>
                 <TimelineSection>
                     <Timeline>
+        //This part maps over each experience object in the experiences array. The index represents the index of the current item being mapped.
                         {experiences.map((experience,index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
+        //This part conditionally renders a connector line between timeline items, except for the last item.
+        //This checks if the current item is not the last item in the experiences array.
                                     {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
