@@ -14,6 +14,7 @@ import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 
+// Styled-components for custom styling
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -25,30 +26,43 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
+
 function App() {
+  // State for managing dark mode, initially set to true
   const [darkMode] = useState(true);
-  //project is initially set to null, indicating that no specific project is selected when the modal is closed.
+
+  // State for managing the modal for project details
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal)
+
+  console.log(openModal); // Logging the state of the modal for debugging
+
   return (
+    // ThemeProvider for managing theme based on darkMode
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router >
+      <Router>
+        
         <Navbar />
         <Body>
+         
           <HeroSection />
+         
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
+          {/* Projects component with modal for project details */}
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          {/* Wrapper for Education and Contact sections */}
           <Wrapper>
             <Education />
             <Contact />
           </Wrapper>
+         
           <Footer />
-          {openModal.state &&
+          {/* Conditional rendering of ProjectDetails modal */}
+          {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          )}
         </Body>
       </Router>
     </ThemeProvider>
