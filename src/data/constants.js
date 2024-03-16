@@ -1,4 +1,5 @@
 export const Bio = {
+  //// Bio object containing personal information
   name: "Janindu Gayanga",
   roles: [
     "Full Stack Developer",
@@ -16,6 +17,7 @@ export const Bio = {
   facebook: "#",
 };
 
+ // Skills component to render the skills based on the skills array
 export const skills = [
   {
     skills: [
