@@ -1,5 +1,5 @@
 export const Bio = {
-  //// Bio object containing personal information
+  // Bio object containing personal information
   name: "Janindu Gayanga",
   roles: [
     "Full Stack Developer",
